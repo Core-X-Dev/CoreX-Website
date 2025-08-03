@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- CoreX Framework Main Website Sitemap -->
+    <!-- This sitemap helps search engines discover and index the main website pages -->
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://core-x.dev/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Overview Section -->
+    <url>
+        <loc>https://core-x.dev/#overview</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Features Section -->
+    <url>
+        <loc>https://core-x.dev/#features</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Quick Start Section -->
+    <url>
+        <loc>https://core-x.dev/#quick-start</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Resources Section -->
+    <url>
+        <loc>https://core-x.dev/#resources</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Community Section -->
+    <url>
+        <loc>https://core-x.dev/#community</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Roadmap Section -->
+    <url>
+        <loc>https://core-x.dev/#roadmap</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Static Assets -->
+    <url>
+        <loc>https://core-x.dev/styles.css</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://core-x.dev/script.js</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Error Pages -->
+    <url>
+        <loc>https://core-x.dev/404.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- Additional Information -->
+    <!-- 
+    This sitemap covers the CoreX Framework main website.
+    The main website provides:
+    - Framework overview and introduction
+    - Key features and capabilities
+    - Quick start guide
+    - Links to resources (docs, roadmap, modules, recipe)
+    - Community information
+    - Development roadmap preview
+    
+    Last updated: December 2024
+    Framework: CoreX
+    Type: Main Website
+    -->
+</urlset> 

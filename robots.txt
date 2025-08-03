@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# CoreX Framework Main Website
+# The official landing page for CoreX Framework
+# This file provides directives for search engine crawlers
+
+# Sitemap location
+Sitemap: https://core-x.dev/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Additional meta information
+# Last updated: 2024
+# Framework: CoreX
+# Type: Main Website 

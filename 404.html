@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreX | Page Not Found</title>
+    <link rel="icon" type="image/png" href="assets/corex-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--bg-tertiary);
+            transform: translateY(-1px);
+        }
+        
+        .search-suggestions {
+            margin-top: 3rem;
+            max-width: 600px;
+        }
+        
+        .search-suggestions h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .suggestion-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .suggestion-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: var(--radius);
+            transition: background-color 0.2s ease;
+        }
+        
+        .suggestion-links a:hover {
+            background: var(--bg-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-message {
+                font-size: 1.25rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">
+            Oops! The page you're looking for doesn't exist.
+        </div>
+        
+        <div class="error-actions">
+            <a href="/" class="btn btn-primary">
+                <i class="fas fa-home"></i>
+                Go Home
+            </a>
+            <a href="javascript:history.back()" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i>
+                Go Back
+            </a>
+        </div>
+        
+        <div class="search-suggestions">
+            <h3>Looking for something specific?</h3>
+            <div class="suggestion-links">
+                <a href="/#overview">
+                    <i class="fas fa-home"></i>
+                    Framework Overview
+                </a>
+                <a href="/#features">
+                    <i class="fas fa-star"></i>
+                    Key Features
+                </a>
+                <a href="/#quick-start">
+                    <i class="fas fa-rocket"></i>
+                    Quick Start Guide
+                </a>
+                <a href="/#resources">
+                    <i class="fas fa-book"></i>
+                    Resources
+                </a>
+                <a href="/#community">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+                <a href="/#roadmap">
+                    <i class="fas fa-map"></i>
+                    Development Roadmap
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add a search functionality
+            const searchInput = document.createElement('input');
+            searchInput.type = 'text';
+            searchInput.placeholder = 'Search CoreX Framework...';
+            searchInput.style.cssText = `
+                width: 100%;
+                max-width: 400px;
+                padding: 0.75rem 1rem;
+                border: 1px solid var(--border-color);
+                border-radius: var(--radius);
+                font-size: 1rem;
+                margin-top: 1rem;
+            `;
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    // Redirect to search or home page
+                    window.location.href = '/';
+                }
+            });
+            
+            const errorActions = document.querySelector('.error-actions');
+            errorActions.parentNode.insertBefore(searchInput, errorActions.nextSibling);
+            
+            // Add some animation
+            const errorCode = document.querySelector('.error-code');
+            errorCode.style.opacity = '0';
+            errorCode.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                errorCode.style.transition = 'all 0.6s ease';
+                errorCode.style.opacity = '1';
+                errorCode.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
